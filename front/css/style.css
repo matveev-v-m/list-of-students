@@ -1,0 +1,18 @@
+body {
+  background-color: #fafafa;
+}
+
+.title {
+  width: auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.form {
+  gap: 15px;
+}
+
+.form__wrap {
+  margin-bottom: 30px;
+}
+

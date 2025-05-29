@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <script defer type="module" src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row form__wrap">
+      <h1 class="title">Список студентов</h1>
+      <form action="" id="form" class="d-flex flex-wrap align-items-end justify-content-center form">
+        <div class="col-2">
+          <label for="surname">Фаммилия</label>
+          <input type="text" id="surname" class="form-control">
+        </div>
+        <div class="col-2">
+          <label for="name">Имя</label>
+          <input type="text" id="name" class="form-control">
+        </div>
+        <div class="col-2">
+          <label for="lastname">Отчество</label>
+          <input type="text" id="lastname" class="form-control">
+        </div>
+        <div class="col-2">
+          <label for="date">Дата рождения</label>
+          <input type="date" id="date" min="1900-01-01" class="form-control">
+        </div>
+        <div class="col-2">
+          <label for="studyStart">Год поступления</label>
+          <input type="number" id="studyStart" min="2000" class="add__input form-control"/>
+        </div>
+        <div class="col-4">
+          <label for="faculty">Факультет</label>
+          <input type="text" id="faculty" class="form-control">
+        </div>
+        <button class="add__btn btn btn-outline-success" id="new__student">Добавить студента</button>
+        <button class="btn btn-outline-success" id="find__student">Найти студента</button>
+      </form>
+    </div>
+    <div class="row">
+      <table class="table table-striped">
+        <thead class="table-dark">
+          <tr>
+            <th scope="col" class="fullName-filter">ФИО</th>
+            <th scope="col" class="faculty-filter">Факультет</th>
+            <th scope="col" class="date-filter">Дата рождения и возраст</th>
+            <th scope="col" class="studyStart-filter">Годы обучения и номер курса</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody class="table__wrap"></tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>
